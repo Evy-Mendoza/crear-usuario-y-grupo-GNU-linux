@@ -1,0 +1,23 @@
+//iniciamos la maquina virtual e ingresamos en modo root
+
+//con el comando (useradd nombre) agregamos dos usuarios
+  useradd vicky
+  useradd evelyn
+
+//con el comando (passwd nombre) agregamos una contraseña a los usuarios
+  passwd vicky
+  ******
+  passwd evelyn
+  ******
+  
+//con el comando (grouadd nombre) agregamos un grupo 
+  groupadd casa
+//verificamos si se creo grupo
+  cat /etc/group
+
+//agregar los usuarios al grupo casa
+  adduser vicky casa
+  adduser evelyn casa
+  
+//modificar el nombre del grupo casa
+ groupmod -n Familia casa
